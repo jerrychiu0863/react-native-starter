@@ -12,6 +12,7 @@ const HomeScreen = (props) => {
   const {
     navigation: { navigate },
   } = props;
+
   return (
     <View>
       <Text style={styles.text}>Hello React Native 123</Text>
@@ -23,6 +24,7 @@ const HomeScreen = (props) => {
         <Text>Go to List Demo</Text>
       </TouchableOpacity>
       <Button onPress={() => navigate('Image')} title="Go to Image Demo" />
+      <Button onPress={() => navigate('Counter')} title="Go to Counter Demo" />
     </View>
   );
 };
